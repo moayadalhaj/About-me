@@ -32,30 +32,72 @@ main {
   background-color: #d8b384;
   color: #000;
   position: relative;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
 }
 main #userDisplay {
-  position: absolute;
-  margin-left: 50px;
-  margin-top: 50px;
+  padding-top: 50px;
+  padding-left: 60px;
+  color: #c84b31;
+  font-size: 30px;
+  font-weight: 700;
+}
+main ul {
   font-size: 24px;
   font-weight: 500;
+  padding-left: 60px;
+  padding-top: 50px;
 }
-main p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -75%);
-  width: 500px;
-  font-size: 20px;
-  padding: 20px;
+main ul h3 {
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+main ul li {
+  padding-left: 10px;
   line-height: 1.5;
-  border: 1px solid #5e454b;
-  background-color: #cee5d0;
+  font-size: 20px;
+  font-weight: 500;
+  list-style: disc;
+}
+main div:nth-child(3) h3 {
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+main div:nth-child(3) ul {
+  font-size: 24px;
+  font-weight: 500;
+  padding-left: 60px;
+  line-height: 1.5;
+}
+main div:nth-child(3) ul li {
+  padding-left: 10px;
+  line-height: 1.5;
+  font-size: 20px;
+  font-weight: 500;
+  list-style: disc;
+}
+main ol h3 {
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+main ol {
+  font-size: 24px;
+  font-weight: 500;
+  padding-top: 50px;
+  padding-left: 60px;
+  line-height: 1.5;
+  list-style: numbers;
+}
+main ol li {
+  padding-left: 10px;
+  line-height: 1.5;
+  font-size: 20px;
+  font-weight: 500;
 }
 footer h4 {
-  margin-top: -20px;
+  height: 50px;
+  padding-top: 60px;
   text-align: center;
+  background-color: #d8b384;
 }
