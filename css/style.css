@@ -40,6 +40,20 @@ main #userDisplay {
   font-size: 30px;
   font-weight: 700;
 }
+main .about-me1 {
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 20px;
+  padding-left: 60px;
+  padding-top: 50px;
+}
+main .about-me2 {
+  padding-left: 60px;
+  line-height: 1.5;
+  font-size: 20px;
+  font-weight: 500;
+  width: 800px;
+}
 main ul {
   font-size: 24px;
   font-weight: 500;
