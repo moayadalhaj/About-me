@@ -14,17 +14,22 @@ header img {
 }
 header h1 {
   position: absolute;
-  margin-top: 30px;
-  padding: 15px;
+  margin-top: 20px;
+  padding: 20px 20px 20px 30px;
   font-size: 32px;
   font-weight: 500;
+  text-align: center;
 }
 header ul {
   position: absolute;
   margin-left: 40%;
 }
+header ul li a {
+  text-decoration: none;
+  color: blanchedalmond;
+}
 header ul li {
-  margin-top: 40px;
+  margin-top: 50px;
   display: inline-block;
   padding: 15px;
 }
@@ -48,70 +53,75 @@ main .about-me1 {
   padding-top: 50px;
 }
 main .about-me2 {
-  padding-left: 60px;
+  padding-left: 70px;
   line-height: 1.5;
   font-size: 20px;
   font-weight: 500;
   width: 800px;
 }
-main ul {
-  font-size: 24px;
-  font-weight: 500;
-  padding-left: 60px;
-  padding-top: 50px;
-}
-main ul h3 {
+main div h3 {
   font-size: 30px;
   font-weight: 700;
   padding-bottom: 20px;
+  padding-left: 60px;
+  padding-top: 20px;
+}
+main ul {
+  font-size: 24px;
+  font-weight: 500;
+  padding-left: 80px;
+  padding-top: 0px;
 }
 main ul li {
-  padding-left: 10px;
   line-height: 1.5;
   font-size: 20px;
   font-weight: 500;
   list-style: disc;
-}
-main div:nth-child(3) h3 {
-  font-size: 30px;
-  font-weight: 700;
-  padding-bottom: 20px;
 }
 main div:nth-child(3) ul {
   font-size: 24px;
   font-weight: 500;
-  padding-left: 60px;
+  padding-left: 80px;
   line-height: 1.5;
 }
 main div:nth-child(3) ul li {
-  padding-left: 10px;
   line-height: 1.5;
   font-size: 20px;
   font-weight: 500;
   list-style: disc;
 }
-main ol h3 {
-  font-size: 30px;
-  font-weight: 700;
-  padding-bottom: 20px;
-}
 main ol {
   font-size: 24px;
   font-weight: 500;
-  padding-top: 50px;
-  padding-left: 60px;
+  padding-left: 80px;
+  padding-bottom: 20px;
   line-height: 1.5;
   list-style: numbers;
 }
 main ol li {
-  padding-left: 10px;
   line-height: 1.5;
   font-size: 20px;
   font-weight: 500;
 }
+
+footer {
+  height: 200px;
+  background-color: #2f5d62;
+  position: relative;
+}
+footer ul {
+  width: 300px;
+  position: relative;
+  top: 30%;
+  left: 40%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+}
+footer ul a {
+  color: #000;
+}
 footer h4 {
-  height: 50px;
-  padding-top: 60px;
   text-align: center;
-  background-color: #d8b384;
+  padding-top: 140px;
 }

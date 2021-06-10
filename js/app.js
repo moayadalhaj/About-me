@@ -5,15 +5,11 @@ let userName = prompt('what is your name ?');
 alert('welcome ' + userName + ', Have a nice day.');
 
 function userQuestion(question, correctAnswer, correctMessage, uncorrectMessage) {
-  let userInput;
+  let userInput = prompt(question).toLowerCase();
 
-  do {
-    userInput = prompt(question).toLowerCase();
-    if (userInput !== 'yes' && userInput !== 'y' && userInput !== 'no' && userInput !== 'n') {
-      userInput = prompt(question + ' please answer by yes , y or no , n');
-    }
-
-  } while (userInput !== 'yes' && userInput !== 'y' && userInput !== 'no' && userInput !== 'n');
+  while (userInput !== 'yes' && userInput !== 'y' && userInput !== 'no' && userInput !== 'n'){
+    userInput = prompt(question + ' please answer by yes , y or no , n');
+  }
   if (userInput === correctAnswer[0] || userInput === correctAnswer[1]) {
     alert(correctMessage);
     counter++;
