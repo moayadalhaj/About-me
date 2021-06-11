@@ -7,8 +7,8 @@ alert('welcome ' + userName + ', Have a nice day.');
 function userQuestion(question, correctAnswer, correctMessage, uncorrectMessage) {
   let userInput = prompt(question).toLowerCase();
 
-  while (userInput !== 'yes' && userInput !== 'y' && userInput !== 'no' && userInput !== 'n'){
-    userInput = prompt(question + ' please answer by yes , y or no , n');
+  while (userInput !== 'yes' && userInput !== 'y' && userInput !== 'no' && userInput !== 'n') {
+    userInput = prompt(question + ' please answer by yes , y or no , n').toLowerCase();
   }
   if (userInput === correctAnswer[0] || userInput === correctAnswer[1]) {
     alert(correctMessage);
@@ -16,7 +16,6 @@ function userQuestion(question, correctAnswer, correctMessage, uncorrectMessage)
   } else {
     alert(uncorrectMessage);
   }
-
 }
 userQuestion('Does my major is mechanical engineering ?', ['yes', 'y'], 'Yes you are right', 'NO, I am MECHANICAL ENGINEER!');
 userQuestion('Do I like BMW more than the Mercedes ?', ['yes', 'y'], 'Yes you are right', 'NO, I am in love with BMW');
@@ -30,16 +29,17 @@ for (let i = 0; i < 4; i++) {
     alert('You are too low');
   } else if (Number(guessNumber) > 6) {
     alert('You are too high');
-  } else {
+  } else if (Number(guessNumber) === 6) {
     alert('Correct Guessing');
     counter++;
     break;
+  } else {
+    alert('Please, Insert a number between 1-9:');
   }
   if (i === 3) {
     alert('The correct answer is 6.');
   }
 }
-
 
 let foods = ['Pizza', 'shawerma', 'seafood', 'Pasta', 'mansaf'];
 let ii;
